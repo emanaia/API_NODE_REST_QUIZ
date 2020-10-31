@@ -61,6 +61,8 @@ app.post("/correction/:id", function (req, res) {
 
 /* 
   LIGANDO O SERVER
-*/
+
 const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => console.log(`Server rodando na porta ${PORT}!`));
+
+*/
