@@ -25,7 +25,7 @@ const server = http.createServer(app);
 */
 
 app.get('/', function (req, res) {
-  res.send('Hello World');
+  res.send('API UNIQUIZ 2020');
 });
 
 app.get("/questions", function (req, res) {
@@ -33,7 +33,8 @@ app.get("/questions", function (req, res) {
 
   res.status(200).send({
     id: game[position].id,
-    questions: game[position].questions
+    questions: game[position].questions,
+    keys: game[position].gabarito
   });
 });
 
