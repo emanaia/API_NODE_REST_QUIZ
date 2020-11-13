@@ -43,7 +43,8 @@ app.get("/questions/:id", function (req, res) {
 
   res.status(200).send({
     id: game[req.params.id].id,
-    questions: game[req.params.id].questions
+    questions: game[req.params.id].questions,
+    keys: game[position].gabarito
   });
 });
 
